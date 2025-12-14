@@ -6,15 +6,15 @@
     "apiKey": {
       "title": "YouTube API Key",
       "type": "string",
-      "description": "Your YouTube Data API key."
+      "description": "Your YouTube Data API key.",
+      "editor": "textfield"
     },
     "searchQueries": {
       "title": "Search queries",
       "type": "array",
       "description": "Keywords or phrases to search on YouTube.",
-      "items": {
-        "type": "string"
-      }
+      "items": { "type": "string" },
+      "editor": "array"
     },
     "maxChannels": {
       "title": "Max channels to return",
@@ -44,16 +44,14 @@
     "includeKeywords": {
       "title": "Required keywords in channel data",
       "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "items": { "type": "string" },
+      "editor": "array"
     },
     "excludeKeywords": {
       "title": "Keywords to exclude (filters out channels)",
       "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "items": { "type": "string" },
+      "editor": "array"
     }
   },
   "required": ["apiKey", "searchQueries"]
