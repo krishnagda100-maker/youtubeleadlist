@@ -1,0 +1,15 @@
+{
+  "name": "youtube-lead-scraper-apify-dataapi",
+  "version": "1.0.0",
+  "description": "Apify actor that discovers YouTube coaching channels using the YouTube Data API and applies avg-views and recent-post filters.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "apify": "^3.0.0",
+    "node-fetch": "^2.6.7"
+  }
+}
