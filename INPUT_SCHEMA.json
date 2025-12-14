@@ -13,8 +13,7 @@
       "title": "Search queries",
       "type": "array",
       "description": "Keywords or phrases to search on YouTube.",
-      "items": { "type": "string" },
-      "editor": "array"
+      "items": { "type": "string" }
     },
     "maxChannels": {
       "title": "Max channels to return",
@@ -44,14 +43,12 @@
     "includeKeywords": {
       "title": "Required keywords in channel data",
       "type": "array",
-      "items": { "type": "string" },
-      "editor": "array"
+      "items": { "type": "string" }
     },
     "excludeKeywords": {
       "title": "Keywords to exclude (filters out channels)",
       "type": "array",
-      "items": { "type": "string" },
-      "editor": "array"
+      "items": { "type": "string" }
     }
   },
   "required": ["apiKey", "searchQueries"]
