@@ -1,0 +1,52 @@
+{
+  "title": "YouTube Lead Scraper Input",
+  "type": "object",
+  "properties": {
+    "apiKey": {
+      "title": "YouTube API Key",
+      "type": "string",
+      "description": "Your YouTube Data API key."
+    },
+    "searchQueries": {
+      "title": "Search queries",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "maxChannels": {
+      "title": "Max channels to return",
+      "type": "integer",
+      "default": 50
+    },
+    "minSubscribers": {
+      "title": "Minimum subscribers",
+      "type": "integer",
+      "default": 0
+    },
+    "avgViewsMin": {
+      "title": "Minimum average views per video",
+      "type": "integer",
+      "default": 0
+    },
+    "avgViewsMax": {
+      "title": "Maximum average views per video",
+      "type": "integer",
+      "default": 100000000
+    },
+    "recentVideoWithinDays": {
+      "title": "Require video posted within X days",
+      "type": "integer",
+      "default": 30
+    },
+    "includeKeywords": {
+      "title": "Required keywords in channel data",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "excludeKeywords": {
+      "title": "Keywords to exclude",
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["apiKey", "searchQueries"]
+}
