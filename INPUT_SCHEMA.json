@@ -1,4 +1,5 @@
 {
+  "schemaVersion": 1,
   "title": "YouTube Lead Scraper Input",
   "type": "object",
   "properties": {
@@ -10,7 +11,10 @@
     "searchQueries": {
       "title": "Search queries",
       "type": "array",
-      "items": { "type": "string" }
+      "description": "Keywords or phrases to search on YouTube.",
+      "items": {
+        "type": "string"
+      }
     },
     "maxChannels": {
       "title": "Max channels to return",
@@ -40,12 +44,16 @@
     "includeKeywords": {
       "title": "Required keywords in channel data",
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string"
+      }
     },
     "excludeKeywords": {
-      "title": "Keywords to exclude",
+      "title": "Keywords to exclude (filters out channels)",
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string"
+      }
     }
   },
   "required": ["apiKey", "searchQueries"]
